@@ -8,8 +8,13 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send({
-    name: "pokemon",
-    type: "yellow",
+    message: "Hello World!",
+  });
+});
+
+app.get("/health", (req, res) => {
+  res.send({
+    status: "ok",
   });
 });
 
